@@ -1,0 +1,128 @@
+# Messages Section
+# These messages are used throughout the plugin for different events and commands.
+
+messages:
+  # Message shown when a player is not found.
+  player-not-found: "Player not found."
+
+# Inventory Configuration Section
+# This section contains configurations for custom inventories such as Trash inventory.
+
+inventories:
+  trash:
+    # Title of the Trash inventory.
+    # The '&c' code makes the title red. You can modify this to your preference.
+    title: "&cTrash"
+    
+    # Size of the Trash inventory in rows (a row contains 9 slots).
+    # This example uses 6 rows, giving a total of 54 inventory slots.
+    size: 6
+
+# Command Configuration Section
+# This section defines various command messages, such as those related to gamemode, god mode, and teleportation.
+
+commands:
+  # Messages related to the /gamemode command
+  gamemode:
+    # Message shown when a player does not use the correct format for the command.
+    usage: "&cUsage: /{label} <mode> [player]"
+    
+    # Message shown when the player provides an invalid game mode.
+    invalid-mode: "&cInvalid game mode. Valid modes are: survival, creative, adventure, spectator."
+    
+    # Message shown when the player is already in the game mode they are trying to switch to.
+    already-in-mode: "&cYou are already in that game mode."
+    
+    # Message shown when the target player is already in the game mode they are being switched to.
+    target-already-in-mode: "&cTarget player is already in that game mode."
+    
+    # Message shown when a player's game mode has been changed successfully.
+    target-changed: "&aGame mode of &b{player}&a changed to &b{mode}&a."
+    
+    # Message shown when the player's own game mode has been changed successfully.
+    changed: "&aYour game mode has been changed to &b{mode}&a."
+
+  # Messages related to the /god command
+  god:
+    # Message shown when the /god command is used without specifying a player.
+    usage: "&cUsage: /{label} [player]"
+    
+    # Message shown when God Mode is enabled for the player.
+    enabled: "&aGod mode enabled."
+    
+    # Message shown when God Mode is disabled for the player.
+    disabled: "&cGod mode disabled."
+    
+    # Message shown when God Mode is enabled for a target player.
+    target-enable: "&aGod mode enabled for &b{player}&a."
+    
+    # Message shown when God Mode is disabled for a target player.
+    target-disable: "&cGod mode disabled for &b{player}&a."
+
+  # Messages related to the /openinventory command
+  open-inventory:
+    # Message shown when a player tries to use the /openinventory command without proper syntax.
+    usage: "&cUsage: /{label} <player>"
+    
+    # Message shown when a player's inventory is successfully opened.
+    target-opened: "&aOpened &b{player}&a's inventory."
+
+  # Messages related to the /enderchest command
+  enderchest:
+    # Message shown when a player's ender chest is successfully opened.
+    target-opened: "&aOpened &b{player}&a's ender chest."
+    
+    # Message shown when a player's ender chest cannot be found.
+    not-found: "&cEnder chest not found."
+
+  # Messages related to the /fix command
+  fix:
+    # Message shown when an item is successfully repaired.
+    repaired: "&aItem repaired."
+    
+    # Message shown when no item is in hand to repair.
+    no-item-in-hand: "&cYou must be holding an item."
+    
+    # Message shown when an item cannot be repaired.
+    not-repairable: "&cThis item cannot be repaired."
+    
+    # Message shown when an item is already repaired.
+    already-repaired: "&cThis item is already repaired."
+
+  # Messages related to the /tpa command
+  tpa:
+    # Message shown when the player uses the /tpa command incorrectly.
+    usage: "&cUsage: /{label} <player>"
+    
+    # Message shown when a player attempts to teleport to themselves.
+    self: "&cYou cannot teleport to yourself."
+    
+    # Message shown when a player has already sent a teleport request.
+    already-sent: "&cYou have already sent a teleport request."
+    
+    # Message shown when a teleport request is successfully sent.
+    request-sent: "&aTeleport request sent to &b{player}&a."
+    
+    # Message shown when a player receives a teleport request from another player.
+    request-received: "&aYou have received a teleport request from &b{player}&a. You have 30 seconds to accept, Use &b/tpaccept &aor &b/tpdeny &ato respond."
+    
+    # Message shown when a teleport request is accepted successfully.
+    request-accepted: "&aTeleport request accepted."
+    
+    # Message shown when the target player accepts the teleport request.
+    request-accepted-target: "&aYou have accepted the teleport request from &b{player}&a."
+    
+    # Message shown when a teleport request is declined.
+    request-declined: "&cTeleport request declined."
+    
+    # Message shown when the teleportation process is about to begin, indicating the time left.
+    teleporting: "&aTeleporting in &b{time} seconds&a."
+    
+    # Message shown when the teleportation process is cancelled.
+    teleport-cancelled: "&cTeleportation cancelled."
+    
+    # Message shown when the player is successfully teleported to the target.
+    teleported: "&aTeleported to &b{player}&a."
+    
+    # Message shown when there is no teleport request to decline or accept.
+    no-request: "&cNo teleport request found."
